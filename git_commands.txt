@@ -1,0 +1,43 @@
+# Git Commands Used in This Project
+
+Here are the key Git commands used throughout the project:
+
+## Initial Setup
+```bash
+# Create project directory
+mkdir gcp-course
+cd gcp-course
+
+# Clone the empty repository
+gcloud source repos clone devops-repo
+cd devops-repo
+
+# Configure Git
+git config --global user.email "your-email@example.com"
+git config --global user.name "Your Name"
+```
+
+## Initial Commit
+After creating the initial application files:
+```bash
+git add --all
+git commit -a -m "Initial Commit"
+git push origin master
+```
+
+## Adding Docker Support
+After creating the Dockerfile:
+```bash
+git add --all
+git commit -am "Added Docker Support"
+git push origin master
+```
+
+## Testing Build Trigger
+After modifying the application code:
+```bash
+git commit -a -m "Testing Build Trigger"
+git push origin master
+```
+
+These commands show the progression of the project through its various stages of development.

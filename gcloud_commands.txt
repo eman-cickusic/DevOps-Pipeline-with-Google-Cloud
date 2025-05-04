@@ -1,0 +1,32 @@
+# Google Cloud Commands Used in This Project
+
+Here are the key Google Cloud commands used throughout the project:
+
+## Setting Up Artifact Registry
+```bash
+# Create an Artifact Registry repository
+gcloud artifacts repositories create devops-repo \
+    --repository-format=docker \
+    --location="REGION"
+
+# Configure Docker to authenticate to Artifact Registry
+gcloud auth configure-docker "REGION"-docker.pkg.dev
+```
+
+## Building and Pushing Docker Images
+```bash
+# Build and push the image to Artifact Registry
+gcloud builds submit --tag "REGION"-docker.pkg.dev/$DEVSHELL_PROJECT_ID/devops-repo/devops-image:v0.1 .
+```
+
+## Viewing Project ID
+```bash
+# View your current project ID
+echo $DEVSHELL_PROJECT_ID
+```
+
+Remember to replace:
+- "REGION" with your specific Google Cloud region (e.g., us-central1)
+- $DEVSHELL_PROJECT_ID will be automatically filled with your project ID when running in Cloud Shell
+
+These commands demonstrate how to interact with Google Cloud services using the command line.
