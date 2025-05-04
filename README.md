@@ -12,6 +12,12 @@ The project implements a simple Python Flask web application that displays a gre
 - Basic knowledge of Git
 - Understanding of Python and Docker
 
+## Video Demonstration
+
+I've created a video showing the full process of myself setting up and testing this CI/CD pipeline. The video demonstrates all the steps above and shows the application running on a Compute Engine VM.
+
+https://www.youtube.com/watch?v=z2ZDLsc6TgI
+
 ## Project Setup Steps
 
 ### 1. Create a Git Repository
@@ -85,9 +91,6 @@ I tested the CI/CD pipeline by:
 3. Verifying that the trigger automatically built a new image
 4. Deploying the new image to a Compute Engine VM to test the changes
 
-## Video Demonstration
-
-I've created a video showing the full process of setting up and testing this CI/CD pipeline. The video demonstrates all the steps above and shows the application running on a Compute Engine VM.
 
 ## File Structure
 
