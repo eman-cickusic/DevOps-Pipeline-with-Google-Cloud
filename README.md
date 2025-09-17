@@ -6,7 +6,7 @@ This repository demonstrates building a continuous integration pipeline using Go
 
 The project implements a simple Python Flask web application that displays a greeting message. This application is containerized using Docker and deployed using Google Cloud's CI/CD pipeline.
 
-## Prerequisites
+## Prerequisites 
 
 - A Google Cloud account
 - Basic knowledge of Git
